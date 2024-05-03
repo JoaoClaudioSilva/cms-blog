@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{#artigo}}{{acao}}: {{title}}{{/artigo}}</title>
+    <script src="../scripts/script_artigos.js"></script>
+</head>
+<body>
+    {{#artigo}}
+    <form method="POST">
+
+        <textarea id="titulo" name="titulo" type="text" style="width: 100%; height: 5vh; resize: none">{{titulo}}</textarea><br>
+        <textarea id="conteudo" name="conteudo" type="text" style="width: 100%; height: 85vh; resize: none">{{conteudo}}</textarea>
+
+        <input type="submit" style="height: 5vh">
+    <form>
+    {{/artigo}}
+</body> 
+</html>
