@@ -53,7 +53,13 @@ module.exports = {
      * @returns            Resposta com json apresentando o sucesso da inclusão.
      */ 
     cmsSalvar: async (req, res) => {
-        let novoArtigo = { titulo: req.body.titulo, conteudo: req.body.conteudo, data: new Date() };
+        const data = new Date()
+
+        const dia = String(data.getDate());
+        const mes = String(data.getMonth() + 1);
+        const ano = data.getFullYear();
+
+        let novoArtigo = { titulo: req.body.titulo, conteudo: req.body.conteudo, categoria: req.body.categoria, data: `${dia}/${mes}/${ano}` };
 
         let answer = await model_artigos.insere_artigo(novoArtigo);
 

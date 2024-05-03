@@ -44,7 +44,7 @@ module.exports = {
     editarArtigo: async (req, res) => {
         
         let titulo = req.params.titulo.replace(/-/g, " ");
-        let novoArtigo = { titulo: req.body.titulo, conteudo: req.body.conteudo };
+        let novoArtigo = { titulo: req.body.titulo, conteudo: req.body.conteudo, categoria: req.body.categoria };
 
         let answer = await model_artigos.edita_artigo(titulo, novoArtigo);
 

@@ -107,6 +107,7 @@ module.exports = {
             
                     artigos[index].titulo = novoConteudo.titulo;
                     artigos[index].conteudo = novoConteudo.conteudo;
+                    artigos[index].categoria = novoConteudo.categoria;
                     
                     await fs.writeFile('./artigos.json', JSON.stringify({ artigos: artigos }, null, 2), 'utf8');
             

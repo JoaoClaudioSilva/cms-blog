@@ -9,10 +9,9 @@
 <body>
     {{#artigo}}
     <form method="POST">
-
-        <textarea id="titulo" name="titulo" type="text" style="width: 100%; height: 5vh; resize: none">{{titulo}}</textarea><br>
-        <textarea id="conteudo" name="conteudo" type="text" style="width: 100%; height: 85vh; resize: none">{{conteudo}}</textarea>
-
+        <textarea id="titulo" name="titulo" type="text" style="width: 100%; height: 5vh; resize: none" placeholder="Escreva aqui o título do artigo...">{{titulo}}</textarea><br>
+        <textarea id="conteudo" name="conteudo" type="text" style="width: 100%; height: 80vh; resize: none" placeholder="Escreva aqui o texto do artigo...">{{conteudo}}</textarea>
+        <textarea id="categoria" name="categoria" type="text" style="width: 100%; height: 5vh; resize: none" placeholder="Escreva aqui a categoria do artigo...">{{categoria}}</textarea>
         <input type="submit" style="height: 5vh">
     <form>
     {{/artigo}}
