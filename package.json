@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e mustache,js,html,css ./bin/www",
+    "dev": "nodemon -e mustache,js,html,css ./bin/www",
+    "start": "node app.js",
     "build:css": "npx postcss public/styles/styles.css -o public/styles/tailwind.css"
   },
   "keywords": [],
