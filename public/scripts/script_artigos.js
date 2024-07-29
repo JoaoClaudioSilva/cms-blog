@@ -1,11 +1,11 @@
-function changeURL(acao, titulo) {
-    titulo = titulo || "";
+function changeURL(acao, id) {
+    id = id || "";
 
-    window.location.href = acao + titulo.toLowerCase().replace(/\s+/g, "-");
+    window.location.href = acao + id;
 }
 
-function excluirArtigo(acao, titulo){
+function excluirArtigo(acao, id){
     if(confirm('Deseja realmente excluir o artigo?')){
-        changeURL(acao, titulo);
+        changeURL(acao, id);
     }
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="center">
+        <form class="box" action="/usuario/signup" method="post">
+            <label>Nome:  <br><input type="text" id="nome" name="nome" /></label><br>
+            <label>Email: <br><input type="email" id="email" name="email" /></label><br>
+            <label>Senha: <br><input type="password" id="senha" name="senha" /></label><br>
+            <label>Confirme a senha: <br><input type="password" id="confirmaSenha" name="confirmaSenha" /></label><br>
+    
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    {{#msg}}
+    <footer style="color: red;">{{msg}}</footer>
+    {{/msg}}
+
+</body>
+</html>

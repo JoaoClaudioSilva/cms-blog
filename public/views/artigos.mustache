@@ -10,42 +10,44 @@
   <script src="../scripts/script_artigos.js"></script>
 </head>
 
+
 <body>
 
   {{{flash}}}
   <section class="text-gray-600 body-font">  
     <div class="container px-5 py-24 mx-auto">
       <div class="-my-8 divide-y-2 divide-gray-100" style="display: flex; flex-direction: column; align-items: center;">
-        {{#artigos}}
+        {{#arts}}
         <div style="z-index: 10;width: 0px; height: 0px; display: flex; align-items: center; justify-content: center;">
           
           {{#isAdmin}}
-          <button onclick="changeURL('/admin/editar/', '{{titulo}}')">
+          <button onclick="changeURL('/admin/editar/', '{{_id}}' )">
             <i class="material-icons">edit</i>
           </button>
 
-          <button onclick="excluirArtigo('/admin/excluir/', '{{titulo}}' )">
+          <button onclick="excluirArtigo('/admin/excluir/', '{{_id}}' )">
             <i class="material-icons">delete</i>
-          </button>                    
+          </button>
           {{/isAdmin}}
         </div>
-        <div class="py-8 flex md:flex-nowrap sm:max-h-56 gap-x-2.5 max-h-screen" style="overflow: hidden;">
+        <div id="{{_id}}" class="py-8 flex md:flex-nowrap sm:max-h-56 gap-x-2.5 max-h-screen" style="overflow: hidden;">
           <div class="md:w-64 mb-6 flex-shrink-0 flex flex-col">
-            <span class="font-semibold title-font text-gray-700">{{categoria}}</span>
-            <span class="mt-1 text-gray-500 text-sm">{{data}}</span>
+            <span class="font-semibold title-font text-gray-700">{{category}}</span>
+            <span class="mt-1 text-gray-500 text-sm">{{date}}</span>
           </div>
-          <a onclick="changeURL('/artigos/ler/', '{{titulo}}' )" class="md:flex-grow" style="cursor:pointer">
+          <a onclick="changeURL('/artigos/ler/', '{{_id}}' )" class="md:flex-grow" style="cursor:pointer">
             <div class="overflow-hidden" style="height: 80%;">
-              <h2 class="text-2xl font-medium text-gray-900 title-font  mb-2">{{titulo}}</h2>
-              <p class="leading-1">{{conteudo}}</p>
+              <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">{{title}}</h2>
+              <p class="leading-1">{{content}}</p>
             </div>
             <div style="height: 20%;display: flex;flex-direction: row;justify-content: end;">
               <p class="text-indigo-500 inline-flex items-center">Leia esse artigo →</p>
             </div>
           </a>
         </div>
-        {{/artigos}}
-        {{^artigos}}<p>Tudo está quieto por aqui</p>{{/artigos}}
+        {{/arts}}
+        {{^arts}}<p>Tudo está quieto por aqui</p>{{/arts}}
+        
       </div>
     </div>
   </section>

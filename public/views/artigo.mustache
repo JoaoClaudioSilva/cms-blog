@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles/tailwind.css" rel="stylesheet">
-    <title>{{#artigo}}{{titulo}}{{/artigo}}</title>
+    <title>{{#artigo}}{{title}}{{/artigo}}</title>
 </head>
 <body>
     {{#artigo}}
-    <div>
-        <main class="px-6 py-10">
-            <div>
-                <h1 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">{{titulo}}</h1>
-                <p class="mt-6 text-justify text-gray-600">{{conteudo}}</p>
-            </div>
-
-            <div class="mt-10">
-                <p class="text-sm font-semibold leading-7 text-teal-600">{{data}}</p>
-                <a href="/artigos" class="text-indigo-500 inline-flex items-center">← Voltar para artigos</a>
-            </div>
-        </main>
-    </div>
+    <p>{{title}}</p>
+    <p>{{content}}</p>
+    <p>{{date}}</p>
+    <p>{{author}}</p>
     {{/artigo}}
 </body>
 </html>

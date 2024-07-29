@@ -1,4 +1,3 @@
-// Importações
 const path = require('path');
 const session = require('express-session');
 const express = require('express');
@@ -6,7 +5,12 @@ const app = express();
 const flash = require('express-flash-notification');
 const cookieParser = require('cookie-parser');
 
-// Configurações da aplicação
+
+require('dotenv').config()
+app.use(express.static('public'));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use(session({                       // Utilização de sessão
     secret: '3#jK@5$!LmPqRtUvWx*7',
@@ -35,19 +39,16 @@ app.set('view engine', 'mustache'); // Pasta que contém arquivos Mustache
 // Roteamento de páginas
 app.get('/', (req, res) => res.render('inicial'));  // Página inicial
 
-app.use('/usuario', require('./routes/route_usuarios'));
-app.use('/artigos', require('./routes/route_artigos'));
+app.use('/usuario', require('./routes/route_users'));
+app.use('/artigos', require('./routes/route_articles'));
 app.use('/admin', require('./routes/route_admins'));
 
 app.get('/loginautomatico', (req, res) => {
     req.session.user = 'admin';
-    req.session.isAdmin = true;     
+    req.session.isAdmin = true;
 
     res.redirect('/artigos');
 });                                 // Página temporária para login como admin
 
-app.listen(3000, () => {})
 
-
-// Exportação
 module.exports = app;
