@@ -2,7 +2,7 @@
   "name": "projeto-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon -e mustache,js,html,css ./bin/www",
     "start": "node app.js"
