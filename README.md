@@ -34,26 +34,6 @@ Visualizador de Páginas: Permite visualizar o conteúdo das páginas a partir d
 https://github.com/JoaoClaudioSilva/projeto-backend
 ``` 
 
-
-
-
-# Funcionamento
-Após o usuário fazer login corretamente, ele será redirecionado para a página principal. Na página principal, ele existirá um botão + que é responsável pela criação de uma página.
-
-<img src="./public/assets/1.png"> </img>
-
-Ao clicar no botão, o usuário será redirecionado para um formulário onde poderá preencher o título (endpoint) e seu conteúdo podendo ser em HTML.
-
-<img src="./public/assets/2.png"> </img>
-
-Após preencher o formulário e enviar. Em seguida, será redirecionado de volta para a página principal, onde verá a lista de paginas que foram criadas.
-
-<img src="./public/assets/3.png"> </img>
-
-Ao clicar em uma das paginas listadas, o usuário será redirecionado para a página que foi criada.
-
-<img src="./public/assets/4.png"> </img>
-
 # Instalação
 
 ```bash
