@@ -31,9 +31,7 @@ Visualizador de Páginas: Permite visualizar o conteúdo das páginas a partir d
 # Repositório do Projeto
 ```bash
 https://github.com/JoaoClaudioSilva/cms-blog
-``` 
-# Acesso
-Este branch do projeto está hospedado. Acesse pelo link: https://joaoc-cms-blog.vercel.app/
+```
 
 # Instalação
 ```bash
