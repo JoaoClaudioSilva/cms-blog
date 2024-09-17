@@ -50,6 +50,4 @@ app.get('/loginautomatico', (req, res) => {
     res.redirect('/artigos');
 });                                 // Página temporária para login como admin
 
-app.listen(3000, () => {})
-
 module.exports = app;

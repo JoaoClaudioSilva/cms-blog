@@ -7,7 +7,6 @@ Este projeto, desenvolvido pelo Grupo 8 na disciplina de Programação Web Back-
 
 # Funcionalidades
 
-
 Sistema de Login: Permite que administradores de conteúdo façam login para acessar as funcionalidades de criação, edição e exclusão de páginas.
 
 Criação Dinâmica de Páginas: Usuários logados podem criar novas páginas, especificando a URL e o conteúdo desejado, podendo incluir tags  HTML.
@@ -31,14 +30,14 @@ Visualizador de Páginas: Permite visualizar o conteúdo das páginas a partir d
 
 # Repositório do Projeto
 ```bash
-https://github.com/JoaoClaudioSilva/projeto-backend
+https://github.com/JoaoClaudioSilva/cms-blog
 ``` 
 # Acesso
 Este branch do projeto está hospedado. Acesse pelo link: https://joaoc-cms-blog.vercel.app/
 
 # Instalação
 ```bash
-git clone https://github.com/JoaoClaudioSilva/projeto-backend
+git clone https://github.com/JoaoClaudioSilva/cms-blog
 ``` 
 Após clonar o repositório, navegue até o diretório do projeto e execute o comando abaixo para instalar as dependências necessárias
 

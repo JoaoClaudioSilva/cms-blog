@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon -e mustache,js,html,css ./bin/www",
-    "start": "node app.js"
+    "start": "nodemon -e mustache,js,html,css ./bin/www"
   },
   "keywords": [],
   "author": "",
