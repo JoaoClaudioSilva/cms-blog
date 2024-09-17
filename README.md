@@ -33,9 +33,10 @@ Visualizador de Páginas: Permite visualizar o conteúdo das páginas a partir d
 ```bash
 https://github.com/JoaoClaudioSilva/projeto-backend
 ``` 
+# Acesso
+Este branch do projeto está hospedado. Acesse pelo link: https://joaoc-cms-blog.vercel.app/
 
 # Instalação
-
 ```bash
 git clone https://github.com/JoaoClaudioSilva/projeto-backend
 ``` 
